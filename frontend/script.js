@@ -2,7 +2,12 @@ const video = document.getElementById("video");
 const emotionText = document.getElementById("emotion");
 
 // WebSocket
-const socket = new WebSocket("ws://localhost:3000");
+const socket = new WebSocket(
+  location.protocol === "https:"
+    ? `wss://${location.host}`
+    : `ws://${location.host}`
+);
+
 
 // Load models
 Promise.all([
