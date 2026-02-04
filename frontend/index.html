@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TheraSense</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- FACE API (BROWSER BUILD) -->
+  <script defer src="https://unpkg.com/face-api.js@0.22.2/dist/face-api.min.js"></script>
+
+<!-- YOUR SCRIPT -->
+  <script defer src="script.js"></script>
+
+</head>
+<body>
+
+<h2>TheraSense – Real-Time Emotion Detection</h2>
+
+<video
+  id="video"
+  width="640"
+  height="480"
+  autoplay
+  muted
+  playsinline
+  style="background:black;">
+</video>
+
+
+
+<div id="emotion-box">
+  <h3>Detected Emotion</h3>
+  <p id="emotion">Waiting...</p>
+</div>
+
+</body>
+</html>
